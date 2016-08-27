@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.ncr.medicalconferencetracker.Acitivities.AdminActivities.ConferenceDetailActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/conference_detail_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/conference_detail_toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/conference_detail_toolbar_title"
+                android:textSize="20sp"
+                android:textColor="#fff"/>
+
+
+            <ImageButton
+                android:id="@+id/conference_detail_edit_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                android:src="@drawable/ic_pencil"
+                android:background="@drawable/custom_button_transparent_background"
+                android:onClick="editButtonOnClick"/>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <LinearLayout
+        android:id="@+id/conference_detail_info_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/conference_detail_toolbar"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#aa000000"
+            android:textSize="12sp"
+            android:layout_marginBottom="3dp"
+            android:text="Conference Name"/>
+
+        <TextView
+            android:id="@+id/conference_detail_conference_nameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textSize="15sp"
+            android:background="@drawable/custom_edittext_background"
+            android:fontFamily="sans-serif"
+            android:text="Conference Name"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#aa000000"
+            android:textSize="12sp"
+            android:layout_marginBottom="3dp"
+            android:text="Conference Description"/>
+
+        <TextView
+            android:id="@+id/conference_detail_conference_descriptionTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textSize="15sp"
+            android:background="@drawable/custom_edittext_background"
+            android:fontFamily="sans-serif"
+            android:text="Conference Description"
+            android:padding="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/conference_detail_edit_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/conference_detail_toolbar"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#aa000000"
+            android:textSize="12sp"
+            android:layout_marginBottom="3dp"
+            android:text="Conference Name"/>
+
+        <EditText
+            android:id="@+id/conference_detail_conference_nameEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textSize="15sp"
+            android:background="@drawable/custom_edittext_background"
+            android:fontFamily="sans-serif"
+            android:hint="Conference Name"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#aa000000"
+            android:textSize="12sp"
+            android:layout_marginBottom="3dp"
+            android:text="Conference Description"/>
+
+        <EditText
+            android:id="@+id/conference_detail_conference_descriptionEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textSize="15sp"
+            android:background="@drawable/custom_edittext_background"
+            android:fontFamily="sans-serif"
+            android:hint="Conference Description"
+            android:padding="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/conference_detail_save_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:textColor="#fff"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/custom_button_background"
+                android:onClick="saveConference"
+
+                />
+
+            <Button
+                android:id="@+id/conference_detail_cancel_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:textColor="#fff"
+                android:background="@drawable/custom_button_background"
+                android:onClick="cancelEdit"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/conference_detail_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_share_variant"
+        app:elevation="6dp"
+        app:borderWidth="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="3dp"
+    card_view:cardUseCompatPadding="true"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/row_topic_fragment_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/topic_frag_row_nametv_placeholder"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/row_topic_fragment_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/row_topic_fragment_name"
+            android:textSize="15sp"
+            android:text="@string/topic_frag_row_descriptiontv_placeholder"
+            android:textColor="#333"/>
+
+        <TextView
+            android:id="@+id/row_topic_fragment_owner_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/row_topic_fragment_description"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:textSize="12sp"
+            android:text="@string/topic_frag_row_suggestedbytv__placeholder"
+            android:textColor="#333"/>
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

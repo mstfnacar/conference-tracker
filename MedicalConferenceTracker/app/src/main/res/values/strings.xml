@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Medical Conference Tracker</string>
+
+    <!-- Startup Activity Strings -->
+
+    <string name="startup_act_doctor">I\'m a doctor</string>
+    <string name="startup_act_admin">I\'m an admin</string>
+    <string name="startup_act_description">Easily attend or schedule Medical Conferences</string>
+
+    <!-- Login Activity Strings -->
+
+    <string name="login_act_login_button">Login</string>
+    <string name="login_act_username_text">Username</string>
+    <string name="login_act_password_text">Password</string>
+    <string name="login_act_username_hint">Enter your name</string>
+    <string name="login_act_password_hint">Enter your password</string>
+
+    <string name="login_act_register_button">Signup</string>
+    <string name="login_act_register_username_text">Username</string>
+    <string name="login_act_register_password_text">Password</string>
+    <string name="login_act_register_username_hint">Enter your name</string>
+    <string name="login_act_register_password_hint">Enter your password</string>
+
+    <string name="login_act_tologin_text">Already have an account?</string>
+    <string name="login_act_tologin_button">Login here</string>
+
+    <string name="login_act_toregister_text">Don\'t have an account?</string>
+    <string name="login_act_toregister_button">Singup here</string>
+
+    <!-- Drawer defaults -->
+    <string name="drawer_open">Drawer opened</string>
+    <string name="drawer_close">Drawer closed</string>
+
+    <!-- Admin Activity Strings -->
+    <string name="adminmaster_act_drawer_conference_title">Conferences</string>
+    <string name="adminmaster_act_drawer_topic_title">Topics</string>
+    <string name="adminmaster_act_drawer_logout_title">Logout</string>
+    <string name="adminmaster_act_toolbar_titleplaceholder">Conference Tracker</string>
+    <string name="conference_detail_toolbar_title">Conference Detail</string>
+
+    <!-- Admin fragment strings -->
+    <string name="conference_frag_row_nametv_placeholder">Conference Name</string>
+    <string name="conference_frag_row_descriptiontv_placeholder">Conference Description</string>
+    <string name="topic_frag_row_nametv_placeholder">Topic Name</string>
+    <string name="topic_frag_row_descriptiontv_placeholder">Topic Description</string>
+    <string name="topic_frag_row_suggestedbytv__placeholder">Suggested by Doctor</string>
+    <string name="topic_frag_suggestedbytv_stringhead">Suggested by</string>
+    <string name="dialog_add_conference_title">Add Conference</string>
+    <string name="dialog_add_conference_namehint_placeholder">Enter conference name</string>
+    <string name="dialog_add_conference_descriptionhint_placeholder">Enter conference description</string>
+    <string name="dialog_add_conference_button_add">Add</string>
+    <string name="dialog_add_conference_button_cancel">Cancel</string>
+
+
+    <!-- Doctor Activity Strings -->
+    <string name="doctormaster_act_drawer_topic_title">Topics</string>
+    <string name="doctormaster_act_drawer_invite_title">Invites</string>
+    <string name="doctormaster_act_drawer_logout_title">Logout</string>
+    <string name="doctormaster_act_toolbar_titleplaceholder">Conference Tracker</string>
+
+    <!-- Doctor Fragment Strings -->
+    <string name="dialog_add_topic_title">Suggest Topic</string>
+    <string name="dialog_add_topic_namehint_placeholder">Enter topic name</string>
+    <string name="dialog_add_topic_descriptionhint_placeholder">Enter topic description</string>
+    <string name="dialog_add_topic_button_add">Add</string>
+    <string name="dialog_add_topic_button_cancel">Cancel</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

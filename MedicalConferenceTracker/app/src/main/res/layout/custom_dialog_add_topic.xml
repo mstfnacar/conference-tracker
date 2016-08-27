@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#aaffffff">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="18sp"
+        android:padding="5dp"
+        android:textColor="#000"
+        android:gravity="center_horizontal"
+        android:text="@string/dialog_add_topic_title"/>
+
+    <EditText
+        android:id="@+id/dialog_addtopic_nameEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/dialog_add_topic_namehint_placeholder"/>
+
+    <EditText
+        android:id="@+id/dialog_addtopic_descriptionEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/dialog_add_topic_descriptionhint_placeholder"/>
+
+    <Button
+        android:id="@+id/dialog_addtopic_add_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dialog_add_topic_button_add"
+        android:layout_marginBottom="5dp"
+        android:textColor="#fff"
+        android:background="@drawable/custom_button_background"
+        />
+
+    <Button
+        android:id="@+id/dialog_addtopic_cancel_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dialog_add_topic_button_cancel"
+        android:textColor="#fff"
+        android:background="@drawable/custom_button_background"
+        />
+
+
+</LinearLayout>

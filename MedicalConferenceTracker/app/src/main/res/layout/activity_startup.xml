@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ncr.medicalconferencetracker.Acitivities.StartupActivity">
+
+    <LinearLayout
+        android:id="@+id/startupact_button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/startup_act_doctor"
+            android:textAllCaps="false"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#fff"
+            android:background="@drawable/custom_button_background"
+            android:onClick="loginOnDoctor"/>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:background="#ffffff"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/startup_act_admin"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:background="@drawable/custom_button_background"
+            android:onClick="loginOnAdmin"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="@string/startup_act_description"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:gravity="center"
+        android:textColor="#000"
+        android:layout_above="@id/startupact_button_container"/>
+
+
+
+</RelativeLayout>

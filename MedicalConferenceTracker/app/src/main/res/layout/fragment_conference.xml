@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.ncr.medicalconferencetracker.Fragments.AdminFragments.ConferenceFragment">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/conference_fragment_coordinatorlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#44ffffff"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/conference_fragment_list_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/conference_fragment_swiperefresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/conference_fragment_recyclerview"
+                    android:layout_marginBottom="5dp"
+                    android:visibility="visible"/>
+
+            </android.support.v4.widget.SwipeRefreshLayout>
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/conference_fragment_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_plus"
+            app:elevation="6dp"
+            app:borderWidth="0dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</RelativeLayout>
